@@ -41,6 +41,11 @@ app.get("/name", (c) => {
   return c.text(`Hello, ${appName}!`);
 });
 
+app.get("/list", (c) => {
+  const list = [1, 2, 3, 4]
+  return c.json(list)
+});
+
 const port = Number(process.env.PORT);
 
 console.log(`Server is running on http://localhost:${port}`);

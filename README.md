@@ -21,7 +21,6 @@
    npm install
    ```
 
-
 2. 環境変数ファイルをコピー:
    ```bash
    cp .env.example .env
